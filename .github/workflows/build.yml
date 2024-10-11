@@ -390,7 +390,8 @@ jobs:
         uses: ASzc/change-string-case-action@v6
         with:
           string: ${{ env.IMAGE_REGISTRY }}
-
+          
+          IMAGE_REGISTRY: Ben-Whitelaw/bazzite-mine
       # Push the image to GHCR (Image Registry)
       - name: Push To GHCR
         uses: Wandalen/wretry.action@v3.5.0
